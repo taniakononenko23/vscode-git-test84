@@ -16,12 +16,13 @@ body {
 .square {
   width: 100px;
   height: 100px;
-  background-color: #FF7F50;
-  margin: 16px;
+  background-color: #ff7f50;
+  margin: 8px;
 }
+
 @media screen and (min-width: 600px) {
   .square {
-    background-color: #8A2BE2;
+    background-color: #8a2be2;
   }
 }
 @media screen and (min-width: 900px) {
@@ -34,10 +35,9 @@ body {
     background-color: #c47;
   }
 }
-
 @media screen and (orientation: portrait) {
   .container {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
