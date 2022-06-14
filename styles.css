@@ -9,10 +9,8 @@ body {
   height: 100vh;
 }
 
-@media screen and (orientation: portrait) {
-  .container .container {
-    flex-direction: row;
-  }
+.container {
+  display: flex;
 }
 
 .square {
@@ -34,6 +32,12 @@ body {
 @media screen and (min-width: 1200px) {
   .square {
     background-color: #c47;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: row;
   }
 }
 
