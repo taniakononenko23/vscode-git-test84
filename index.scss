@@ -1,36 +1,32 @@
-@import'breakpoints.scss';
-
+@import 'breakpoints.scss';
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-
-.square{
-    width: 100px;
-    height: 100px;
-    background-color: coral;
-    margin: 16px;
-    @include for-less-medium-up{
-        background-color: #8a2be2;
+.container {
+  @media screen and (orientation: portrait) {
+    .container {
+      flex-direction: row;
     }
-    @include for-medium-up{
-        background-color: #a61;
-    }
-    @include for-large-up{
-        background-color: #c47;
-    }
+  }
 }
-
-.container{
-    @media screen and (orientation: portrait) {
-        .container{
-            flex-direction: row;
-        }
-    }
-}     
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #FF7F50;
+  margin: 16px;
+  @include for-less-medium-up {
+    background-color: #8A2BE2;
+  }
+  @include for-medium-up {
+    background-color: #a61;
+  }
+  @include for-large-up {
+    background-color: #c47;
+  }
+}   
